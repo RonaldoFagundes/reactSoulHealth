@@ -50,13 +50,15 @@ export default function CalcImc() {
                 onChangeText={
                     (valor) => handleInputChange("altura", parseFloat(valor))
                 }
-            />
+                keyboardType="numeric"
+             />
 
             <TextInput style={styles.TextInput}
                 placeholder=" digite a seu peso! " placeholderTextColor='#7FFF00'
                 onChangeText={
                     (valor) => handleInputChange("peso", parseFloat(valor))
                 }
+                keyboardType="numeric"
             />
 
             <TouchableOpacity style={styles.BtnCalc}>
